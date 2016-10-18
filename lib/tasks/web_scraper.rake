@@ -1,5 +1,5 @@
-require 'HTTParty'
-require 'Nokogiri'
+# require 'HTTParty'
+# require 'Nokogiri'
 require 'JSON'
 
 desc "scrape days"
