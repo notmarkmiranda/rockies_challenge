@@ -1,7 +1,3 @@
-# require 'HTTParty'
-# require 'Nokogiri'
-require 'JSON'
-
 desc "scrape days"
 task scrape_days: [ :environment ] do
   `rails db:drop db:create db:migrate`
