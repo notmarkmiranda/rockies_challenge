@@ -1,24 +1,15 @@
-# README
+# MLB API Usage
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Rails app that utilizes the MLB API to display (currently 1) statistics from regular season games.
 
-Things you may want to cover:
+```
+git clone git@github.com:notmarkmiranda/rockies_challenge.git
+cd rockies_challenge
+bundle
+rails db:drop db:create db:migrate
+rake scrape_days
+```
 
-* Ruby version
+Once the rake task is finished, navigate to ```http://localhost:3000``` in your browser. It currently shows regular season mound visits per team.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+A live version can be seen here: https://rockies.herokuapp.com/
