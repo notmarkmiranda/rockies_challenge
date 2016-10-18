@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="list-group col-md-4 offset-md-4">
+    <% @teams.each do |team| %>
+    <div class="list-group-item">
+      <h5 class="list-group-item-heading"><%= team.name %></h5>
+      <p class="list-group-item-text"><%= team.total_mound_visits %></p>
+    </div>
+    <% end %>
+  </div>
+</div>
